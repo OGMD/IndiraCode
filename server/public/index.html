@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>SocketIo</title>
+</head>
+<body>
+  <div class="nav" id="nav">
+		<div class="nav-flex" id="nav-flex">
+			<div class="navflex1">
+				<ol class="ol">
+					<li class="li1">
+						Logo
+					</li>
+					<li class="li2">
+						<a href="./index.html" class="a">Index</a>
+					</li>
+          <li class="li2">
+						<a href="./echo.html" class="a">Sensores</a>
+					</li>
+					<li class="li3">
+						<a href="https://socket.io/docs/v4/client-api/" class="a">SocketIO</a>
+					</li>
+				</ol>
+			</div>
+			<div class="navflex2">
+
+			</div>
+		</div>
+	</div>
+  <ul id="messages"></ul>
+  <form id="form" action="">
+    <input id="input" autocomplete="off" /><button>Send</button>
+  </form>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="./js/index.js"></script>
+</html>

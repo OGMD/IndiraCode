@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta author="OGMD" date="28/08/22">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>SocketIO Sensor</title>
+</head>
+<body>
+	<div class="nav" id="nav">
+		<div class="nav-flex" id="nav-flex">
+			<div class="navflex1">
+				<ol class="ol">
+					<li class="li1">
+						Logo
+					</li>
+					<li class="li2">
+						<a href="./index.html" class="a">Index</a>
+					</li>
+					<li class="li2">
+						<a href="./echo.html" class="a">Sensores</a>
+					</li>
+					<li class="li3">
+						<a href="https://socket.io/docs/v4/client-api/" class="a">SocketIO</a>
+					</li>
+				</ol>
+			</div>
+			<div class="navflex2">
+
+			</div>
+		</div>
+	</div>
+	<main class="main">
+		<div class="time">
+			<div class="time-flex">
+				<h1 class="h1-time">Entry:</h1>
+				<div class="divesp"></div>
+				<div class="messages" id="messages">0</div>
+			</div>
+			<div class="m1" id="m1"></div>
+		</div>
+		<div class="infoESP32">
+			<div class="flag" id="flag">Esp32 is not ready</div>
+			<div class="host" id="host">Localhost: 192.168.x.y</div>
+		</div>
+		<div class="container-flex">
+			<div class="sensor1 sens">
+				<div class="sensName1" id="sensName1">Humedad</div>
+				<div class="sensData1 sensData" id="sensData1">Sens1Data</div>
+			</div>
+			<div class="sensor2 sens">
+				<div class="sensName2" id="sensName2">Temperatura</div>
+				<div class="sensData2 sensData" id="sensData2">Sens2Data</div>
+			</div>
+			<div class="sensor3 sens">
+				<div class="sensName3" id="sensNamea3">Luminicencia</div>
+				<div class="sensData3 sensData" id="sensData3">Sens3Data</div>
+			</div>
+			<div class="sensor4 sens">
+				<div class="sensName4" id="sensName4">Caudal</div>
+				<div class="sensData4 sensData" id="sensData4">Sens4Data</div>
+			</div>
+		</div>
+	</main>
+	
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="./js/echo.js"></script>
+</html>
