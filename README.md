@@ -54,27 +54,21 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Tabla de contenidos</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
+      <a href="#about-the-project">Acerca del proyecto</a>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started">Como empezar</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#prerequisites">Prerequisitos</a></li>
+        <li><a href="#installation">Instalacion</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#contributing">Contribucion</a></li>
+    <li><a href="#license">Licencia</a></li>
+    <li><a href="#contact">Contacto</a></li>
   </ol>
 </details>
 
@@ -88,11 +82,11 @@
 Se basa en una comunicacion bidireccional con la ayuda del protocolo Websocket, utilizando la libreria de socketIO tanto en cliente como en el servidor.
 
 Porque el uso de esto:
-* Mantiene ediciente el codigo con la libreria de socketIo permitiendo distinguir entre las peticiones
-* Websocket permite la comunicacion bidireccional en tiempo rea.
-* Hay otras formas de implementar el codigo pero esta en sencilla" ":smile:
+* Mantiene eficiente el codigo con la libreria de socketIo permitiendo distinguir entre las peticiones
+* Websocket permite la comunicacion bidireccional en tiempo real.
+* Hay otras formas de implementar el codigo pero esta es sencilla" ":smile:
 
-Aunque claro el codigo de este repositorio no esta pulido es mas bien un templeta para que se pueda implementar la visualizacion de datos de sensores utilizando el controlador ESP32.
+Aunque claro el codigo de este repositorio no esta pulido es mas bien un base para que se pueda implementar la visualizacion de datos de sensores utilizando el controlador ESP32.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,11 +112,11 @@ En esta secciones the mostramos la mayoria de librerias o formas de trabajo que 
 <!-- GETTING STARTED -->
 ## Como empezar
 
-En este caso se te explico que tienes que hacer par utilizar los datos almacenados en este repositorio.
+En este caso te explico que tienes que hacer par utilizar los datos almacenados en este repositorio.
 
 ### Prerequisitos
 
-Tienes que instalar npm claro teniendo NODE instalado desde antes si tienes el IDE de arduino en vez del de platformio no hay ningun problema solo instala las librerias que se marcan en la carpeta client/Eso32_SckIO/lib/README
+Tienes que instalar npm (recordando que NODE ya debe estar instalado) si tienes el IDE de arduino en vez del de platformio no hay ningun problema solo instala las librerias que se marcan en la carpeta client/Eso32_SckIO/lib/README
 * npm
   ```sh
   npm install npm@latest -g
@@ -132,15 +126,18 @@ Tienes que instalar npm claro teniendo NODE instalado desde antes si tienes el I
 
 _Tienes que seguir los pasos._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/OGMD/IndiraCode.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
+2. Run server
+   ```sh
+   npm run dev
+   ```   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
