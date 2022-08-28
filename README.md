@@ -17,7 +17,7 @@
 *** See the bottom of this document for the declaration of the reference variables
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
+--
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -34,19 +34,19 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">OGMD IoT</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    IoT with ESP32, palatformio and more;
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://socket.io/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/OGMD/IndiraCode/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/OGMD/IndiraCode/issues">Request Feature</a>
   </p>
 </div>
 
@@ -81,28 +81,26 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Sobre el proyecto
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Se basa en una comunicacion bidireccional con la ayuda del protocolo Websocket, utilizando la libreria de socketIO tanto en cliente como en el servidor.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+Porque el uso de esto:
+* Mantiene ediciente el codigo con la libreria de socketIo permitiendo distinguir entre las peticiones
+* Websocket permite la comunicacion bidireccional en tiempo rea.
+* Hay otras formas de implementar el codigo pero esta en sencilla" ":smile:
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+Aunque claro el codigo de este repositorio no esta pulido es mas bien un templeta para que se pueda implementar la visualizacion de datos de sensores utilizando el controlador ESP32.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-### Built With
+<!-- ### Hecho Con
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+En esta secciones the mostramos la mayoria de librerias o formas de trabajo que se emplearon en el desarrollo.
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
@@ -115,45 +113,40 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
+ -->
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Como empezar
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+En este caso se te explico que tienes que hacer par utilizar los datos almacenados en este repositorio.
 
-### Prerequisites
+### Prerequisitos
 
-This is an example of how to list things you need to use the software and how to install them.
+Tienes que instalar npm claro teniendo NODE instalado desde antes si tienes el IDE de arduino en vez del de platformio no hay ningun problema solo instala las librerias que se marcan en la carpeta client/Eso32_SckIO/lib/README
 * npm
   ```sh
   npm install npm@latest -g
   ```
 
-### Installation
+### Instalacion
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_Tienes que seguir los pasos._
 
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/OGMD/IndiraCode.git
    ```
 3. Install NPM packages
    ```sh
    npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- USAGE EXAMPLES -->
+<!-- USAGE EXAMPLES --
 ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
@@ -164,7 +157,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 
-<!-- ROADMAP -->
+<!-- ROADMAP --
 ## Roadmap
 
 - [x] Add Changelog
@@ -179,21 +172,20 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
+-->
 
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Las contribuciones a este codigo son para los desarrolladores de las librerias arduinoWebSockets y asociados, junto con los de la libreria socketIO **muchas gracias**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+Si puedes mejorar el codigo o agregar contenido util para los demas, puedes crear un fork del repositorio para implementar un pull request, gracias!
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+2. Crear tu Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+5. Abrir un Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -202,7 +194,9 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+La libreria es licenciada bajo LGPLv2.1
+
+libb64 escrita por Chris Venter. Es distribuida bajo Public Domain.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -211,15 +205,15 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+davilamonsi15@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/OGMD/IndiraCode](https://github.com/OGMD/IndiraCode)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- ACKNOWLEDGMENTS -->
+<!-- ACKNOWLEDGMENTS --
 ## Acknowledgments
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
@@ -251,7 +245,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/m.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
