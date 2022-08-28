@@ -86,7 +86,7 @@ Porque el uso de esto:
 * Websocket permite la comunicacion bidireccional en tiempo real.
 * Hay otras formas de implementar el codigo pero esta es sencilla" ":smile:
 
-Aunque claro el codigo de este repositorio no esta pulido es mas bien un base para que se pueda implementar la visualizacion de datos de sensores utilizando el controlador ESP32.
+Aunque claro el codigo de este repositorio no esta pulido es mas bien una base para que se pueda implementar la visualizacion de datos de sensores utilizando el controlador ESP32.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,11 +112,12 @@ En esta secciones the mostramos la mayoria de librerias o formas de trabajo que 
 <!-- GETTING STARTED -->
 ## Como empezar
 
-En este caso te explico que tienes que hacer par utilizar los datos almacenados en este repositorio.
+En este caso te explico que tienes que hacer para utilizar los datos almacenados en este repositorio.
 
 ### Prerequisitos
 
 Tienes que instalar npm (recordando que NODE ya debe estar instalado) si tienes el IDE de arduino en vez del de platformio no hay ningun problema solo instala las librerias que se marcan en la carpeta client/Eso32_SckIO/lib/README
+dentro del IDE de Arduino o el de tu preferencia.
 * npm
   ```sh
   npm install npm@latest -g
