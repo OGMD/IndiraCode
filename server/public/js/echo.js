@@ -12,6 +12,9 @@ var sensData1 = document.getElementById('sensData1');
 var sensData2 = document.getElementById('sensData2');
 var sensData3 = document.getElementById('sensData3');
 var sensData4 = document.getElementById('sensData4');
+var sensData5 = document.getElementById('sensData5');
+var sensData6 = document.getElementById('sensData6');
+var ButtonMain = document.getElementById('ButtonMain');
 /* socket.on('hello', (data) => {
     var item = document.createElement('li');
     item.textContent = data;
@@ -53,6 +56,8 @@ function Jsonobj(obj){
     sensData2.innerHTML = myObj.sens2;
     sensData3.innerHTML = myObj.sens3;
     sensData4.innerHTML = myObj.sens4;
+    sensData5.innerHTML = myObj.sens5;
+    sensData6.innerHTML = myObj.sens6;
 }
 
 function Jsonobj2(obj){
@@ -61,3 +66,10 @@ function Jsonobj2(obj){
     flag.innerHTML = myObj.now;
     host.innerHTML = `Localhost: ${myObj.host}`;
 }
+
+function onMachine() {
+    var data = "Encender";
+    socket.emit('ButtonMain',data);
+    console.log(`${data} Machina ----`)
+}
+

@@ -10,7 +10,7 @@ WiFiMulti WiFiMulti;
 SocketIOclient socketIO;
 
 #define USE_SERIAL Serial
-String ipLocal = "192.168.1.2"
+
 void socketIOEvent(socketIOmessageType_t type, uint8_t * payload, size_t length) {
     switch(type) {
         case sIOtype_DISCONNECT:
@@ -88,7 +88,7 @@ void setup() {
     String ip = WiFi.localIP().toString();
     USE_SERIAL.printf("[SETUP] WiFi Connected %s\n", ip.c_str());
     // server address, port and URL
-    socketIO.begin(ipLocal.c_str(), 4000, "/socket.io/?EIO=4");
+    socketIO.begin("192.168.1.2", 4000, "/socket.io/?EIO=4");
     // event handler
     socketIO.onEvent(socketIOEvent);
 }
@@ -124,7 +124,7 @@ void dataProbe(){
         JsonObject param1 = array.createNestedObject();
         param1["now"] = "esp is ready";
         param1["next"] ="Siguiente paramatro";
-        param1["host"]= ipLocal.c_str();
+        param1["host"]= "192.168.1.2";
         // JSON to String (serializion)
         String output;
         serializeJson(doc, output);

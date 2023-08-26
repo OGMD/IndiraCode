@@ -55,7 +55,10 @@ io.on('connection', (socket) => {
     socket.on('chat message', (msg) => {
         io.emit('chat message', msg);
     });
-    //socket.emit('hello', "Esto es un hola");
+    socket.on('ButtonMain',(data) => {
+        console.log(`ButtonState: ${data}`);
+        io.emit('ButtonMain',data);
+    })
 })
 
 
